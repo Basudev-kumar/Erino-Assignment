@@ -1,0 +1,133 @@
+.leads-container {
+  min-height: 100vh;
+  background: #f5f5f5;
+}
+
+.leads-header {
+  background: white;
+  padding: 20px 40px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.leads-header h1 {
+  color: #333;
+  font-size: 24px;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.user-info {
+  color: #666;
+}
+
+.new-lead-btn {
+  padding: 10px 20px;
+  background: #667eea;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.new-lead-btn:hover {
+  background: #5a67d8;
+}
+
+.logout-btn {
+  padding: 10px 20px;
+  background: #e53e3e;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.logout-btn:hover {
+  background: #c53030;
+}
+
+.leads-content {
+  padding: 40px;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 5px;
+}
+
+.action-buttons button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.action-buttons button:first-child {
+  background: #4299e1;
+  color: white;
+}
+
+.action-buttons .delete-btn {
+  background: #e53e3e;
+  color: white;
+}
+
+.source-badge, .status-badge {
+  padding: 3px 8px;
+  border-radius: 3px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.status-badge.new { background: #bee3f8; color: #2c5282; }
+.status-badge.contacted { background: #fbd38d; color: #744210; }
+.status-badge.qualified { background: #c6f6d5; color: #22543d; }
+.status-badge.lost { background: #fed7d7; color: #742a2a; }
+.status-badge.won { background: #9ae6b4; color: #22543d; }
+
+.source-badge.website { background: #e9d8fd; color: #44337a; }
+.source-badge.facebook_ads { background: #bee3f8; color: #2c5282; }
+.source-badge.google_ads { background: #fbd38d; color: #744210; }
+.source-badge.referral { background: #c6f6d5; color: #22543d; }
+.source-badge.events { background: #fed7d7; color: #742a2a; }
+.source-badge.other { background: #e2e8f0; color: #2d3748; }
+
+.pagination {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.pagination button {
+  padding: 8px 16px;
+  border: 1px solid #ddd;
+  background: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.pagination button:hover:not(:disabled) {
+  background: #667eea;
+  color: white;
+  border-color: #667eea;
+}
+
+.pagination button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
